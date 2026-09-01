@@ -1,0 +1,48 @@
+@font-face {
+    font-family: JockeyOne;
+    src: url(../font/JockeyOne-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: BIZUDPGothic;
+    src: url(../font/BIZUDPGothic-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: BIZUDPGothic;
+    src: url(../font/BIZUDPGothic-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Cairo;
+    src: url(../font/Cairo-Regular.ttf);
+    font-weight: normal;
+}
+
+:root{
+    /* Fonts */
+    --fTitle: JockeyOne, 'Arial Narrow Bold', sans-serif;
+    --fMain: BIZUDPGothic, Arial, sans-serif;
+    --fBis: Cairo, 'Times New Roman', Times, serif;
+
+    /* Colors */
+    /* Main colors */
+    --cBackground: #ffffff;
+    --cFont: #000000;
+    --cSecond: #031351;
+    --cDetail: #E4D2E0;
+    --cDetail2: #F3F3F3;
+    --cButton: #1A128C;
+    /* Second colors */
+    --blue2: #B9BAE8;
+    --red1: #FF3232;
+    --red2: #FFAAAA;
+    --green1: #327F1A;
+    --green2: #85E693;
+
+    /* Sizes */
+    --sBigTitle: 50px;
+    --sTitle: 40px;
+    --sSubTitle: 24px;
+    --sMain: 16px;
+}

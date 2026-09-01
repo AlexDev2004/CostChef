@@ -1,0 +1,68 @@
+header{
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:7px;
+}
+.logoCostChef{
+    grid-column: 1 /span 3;
+    grid-row: 1;
+}
+.logoResto{
+    grid-column: 1;
+    grid-row: 2;
+}
+header h2{
+    grid-column: 2;
+    grid-row: 2;
+}
+header svg{
+    grid-column: 3;
+    grid-row: 2;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 13px;
+}
+main{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+article{
+    padding-left: 0;
+    padding-right: 0;
+    gap:10px;
+}
+article div div:first-child{
+    padding:15px;
+    border-radius: 100%;
+}
+article div div svg{
+    width: 60px;
+    height: 60px;
+}
+
+.card{
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    max-width: 500px;
+}
+
+aside{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+aside div:first-child{
+    justify-content: space-around;
+}
+
+#titre img{
+    height: 70px;
+}

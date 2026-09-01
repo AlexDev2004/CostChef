@@ -1,0 +1,115 @@
+body{
+    margin:0;
+    padding:0;
+    height: vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--cDetail2);
+}
+
+/* Type de textes */
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin:0;
+    font-family: var(--fMain);
+}
+h3{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--fMain);
+}
+p{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: var(--fMain);
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--cButton);
+    font-weight: normal;
+    font-family: var(--fMain);
+}
+a:not(.buttonOff):hover{
+    text-decoration: underline;
+}
+.aMini{
+    font-size: 16px;
+    font-family: var(--fBis);
+    color: var(--cButton);
+    text-decoration: none;
+}
+.aMini:hover{
+    text-decoration: underline;
+}
+
+/* -----Header----- */
+header{
+    display: flex;
+    background-color: var(--cSecond);
+    align-items: center;
+    justify-content: end;
+    color: var(--cBackground);
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap:20px;
+}
+header img{
+    height: 80px;
+}
+.logoResto{
+    border-radius: 100px;
+}
+.logoCostChef{
+    margin-right: auto;
+}
+
+
+/* -----Main----- */
+main{
+    display: flex;
+    width: vw;
+    padding:50px;
+    gap:40px;
+    justify-content: space-between;
+    background-color: var(--cBackground);
+}
+
+
+/* -----Footer----- */
+footer{
+    display: flex;
+    background-color: var(--cDetail2);
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    gap:20px;   
+    margin-top: auto;
+    position:sticky;
+}
+.backButton{
+    height: 43px;
+    border: solid 3px var(--cButton);
+    color: var(--cButton);
+    border-radius: 3px;
+    font-family: var(--fMain);
+    font-weight: bold;
+    font-size: 24px;
+}
+.backButton:hover{
+    background-color: var(--cDetail);
+    border: solid 3px var(--cSecond);
+    color: var(--cSecond);
+}
+footer a:nth-last-child(2){
+    color: var(--cSecond);
+    font-weight: bold;
+}
+footer a:last-child{
+    margin-left: auto;
+}

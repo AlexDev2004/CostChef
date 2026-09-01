@@ -1,0 +1,26 @@
+/* Accueil */
+.card{
+    gap:5px;
+    padding:10px;
+    height: 170px;
+    width: auto;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+main{
+    flex-direction: column;
+    padding: 50px;
+}
+aside{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: auto;
+}
