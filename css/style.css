@@ -71,6 +71,7 @@ header img{
 /* -----Main----- */
 main{
     display: flex;
+    flex-direction: column;
     width: vw;
     padding:50px;
     gap:40px;
@@ -92,16 +93,19 @@ footer{
     margin-top: auto;
     position:sticky;
 }
-.backButton{
-    height: 43px;
-    border: solid 3px var(--cButton);
+.secondaryButton{
+    display: flex;
+    height: fit-content;
+    align-items: center;
     color: var(--cButton);
-    border-radius: 3px;
-    font-family: var(--fMain);
-    font-weight: bold;
-    font-size: 24px;
+    padding: 8px;
+    border: solid 3px var(--cButton);
+    border-radius: 5px;
 }
-.backButton:hover{
+.secondaryButton h3{
+    margin:0;
+}
+.secondaryButton:hover{
     background-color: var(--cDetail);
     border: solid 3px var(--cSecond);
     color: var(--cSecond);

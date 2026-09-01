@@ -1,0 +1,36 @@
+#recetteTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#recetteTitle button{
+    margin-left: auto;
+}
+.primaryButton{
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    background-color: var(--cButton);
+    color: var(--cBackground);
+    padding: 8px;
+    border-radius: 5px;
+    border:none;
+}
+.primaryButton h3{
+    margin:0;
+}
+#recetteTitle div:first-child{
+    background-color: var(--cDetail);
+    padding:20px;
+    border-radius: 100%;
+}
+#recetteTitle div:first-child{
+    background-color: var(--cDetail);
+    padding:20px;
+    border-radius: 100%;
+}
+.title{
+    display: flex;
+    align-items: center;
+}
