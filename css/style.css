@@ -35,6 +35,10 @@ a{
 a:not(.buttonOff):hover{
     text-decoration: underline;
 }
+.buttonOff{
+    color:var(--cSecond);
+    font-weight: bold;
+}
 .aMini{
     font-size: 16px;
     font-family: var(--fBis);
@@ -96,6 +100,7 @@ footer{
 .secondaryButton{
     display: flex;
     height: fit-content;
+    width: fit-content;
     align-items: center;
     color: var(--cButton);
     padding: 8px;
@@ -116,4 +121,31 @@ footer a:nth-last-child(2){
 }
 footer a:last-child{
     margin-left: auto;
+    width: fit-content;
+}
+#cgu{
+    margin-left: auto;
+}
+footer div:first-child{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.arianeSeparator{
+    font-size: 30px;
+    color:var(--cSecond);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    border:solid 1px #a3a3a3;
+    border-radius: 5px;
+    padding:10px;
+    height:fit-content;
+}
+input::placeholder{
+        color:#a3a3a3;
+        font-size: 16px;
+        font-family: var(--fMain);
 }

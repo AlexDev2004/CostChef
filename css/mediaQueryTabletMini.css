@@ -24,3 +24,11 @@ aside{
     padding-right: 40px;
     width: auto;
 }
+
+footer{
+    flex-direction: column;
+    align-items: baseline;
+}
+#cgu{
+    margin:auto
+}

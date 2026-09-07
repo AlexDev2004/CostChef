@@ -66,3 +66,17 @@ aside div:first-child{
 #titre img{
     height: 70px;
 }
+
+
+.secondaryButton{
+    display:none;
+}
+
+#ariane{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#ariane div{
+    width: fit-content;
+}
