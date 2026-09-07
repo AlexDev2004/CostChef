@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../css/var.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/produits.css">
-    <link rel="stylesheet" href="../css/mediaQueryPc2.css" media="only screen and (max-width:1430px)">
+    <!-- <link rel="stylesheet" href="../css/mediaQueryPc2.css" media="only screen and (max-width:1430px)">
      <link rel="stylesheet" href="../css/mediaQueryTablet.css" media="only screen and (max-width:1230px)">
     <link rel="stylesheet" href="../css/mediaQueryTabletMini.css" media="only screen and (max-width:900px)">
     <link rel="stylesheet" href="../css/mediaQuerymobile.css" media="only screen and (max-width:820px)">
-    <link rel="stylesheet" href="../css/mediaQuerymobileMini.css" media="only screen and (max-width:420px)">
+    <link rel="stylesheet" href="../css/mediaQuerymobileMini.css" media="only screen and (max-width:420px)"> -->
     <title>CostChef</title>
 </head>
 
@@ -37,7 +37,7 @@
         <section>
             <div id="search">
                 <h3>Liste des produits</h3>
-                <form id="">
+                <form id="searchForm">
                     <input name="searchInputProduct" id="searchInputProduct" type="text" placeholder="Recherchez un produit">
                     <select name="filterProductTypeSearch" id="filterProductTypeSearch">
                         <option value="alphabetique">Alphabétique</option>
@@ -56,12 +56,12 @@
         <!-- ----------------------------------------------------Overlay ------------------------------------------------------>
 
         <article>
-            <form>
-                <div><label for="nomProduit">Nom du produit</label><input type="text" id="nomProduit" name="nomProduit" placeholder="Ex. Carotte, Huile d'olive..."></div>
-                <div><label for="categorie">Catégorie</label><select name="categorie" id="categorie"><option value="dov">DOV</option><option value="doa">DOA</option><option value="bof">BOF</option><option value="economat">Economat</option><option value="cave">Cave</option><option value="surgele">Surgelé</option><option value="materiel">Matériel</option></select></div>
-                <div><label for="unite">Unité</label><select name="unite" id="unite"><option value="kg">kg</option><option value="L">L</option><option value="piece">Pièce</option><option value="botte">Botte</option><option value="boite">Boîte</option></select></div>
-                <div><label for="prixU">Prix unitaire</label><input type="number" id="prixU" name="prixU"></div>
-                <button>Confirmer</button>
+            <form post="#" id="créationDeProduit">
+                <div><div id="nomProduit"><label for="nomProduitText">Nom du produit</label><input type="text" name="nomProduit" id="nomProduitText" placeholder="Ex. Carotte, Huile d'olive..."></div></div>
+                <div><div><label for="categorie">Catégorie</label><select name="categorie" id="categorie"><option value="dov">DOV</option><option value="doa">DOA</option><option value="bof">BOF</option><option value="economat">Economat</option><option value="cave">Cave</option><option value="surgele">Surgelé</option><option value="materiel">Matériel</option></select></div>
+                <div><label for="unite">Unité</label><select name="unite" id="unite"><option value="kg">kg</option><option value="L">L</option><option value="piece">Pièce</option><option value="botte">Botte</option><option value="boite">Boîte</option></select></div></div>
+                <div><div><label for="prixU">Prix unitaire</label><input type="number" id="prixU" name="prixU"></div>
+                <button type="submit">Confirmer</button></div>
             </form>
         </article>
 
@@ -74,13 +74,6 @@
                 <th>Unité</th>
                 <th>Prix unitaire (€)</th>
                 <th></th>
-            </tr>
-            <tr>
-                <td>Pavé de saumon</td>
-                <td>DOA</td>
-                <td>kg</td>
-                <td>15.90</td>
-                <td></td>
             </tr>
 
         </table></div>
