@@ -38,7 +38,7 @@
             <div id="search">
                 <h3>Liste des produits</h3>
                 <form id="searchForm">
-                    <input name="searchInputProduct" id="searchInputProduct" type="text" placeholder="Recherchez un produit">
+                    <input name="searchInputProduct" id="searchInputProduct" type="search" placeholder="Recherchez un produit">
                     <select name="filterProductTypeSearch" id="filterProductTypeSearch">
                         <option value="alphabetique">Alphabétique</option>
                         <option value="catégorie">Catégorie</option>
@@ -49,21 +49,30 @@
             </div>
             <button class="primaryButton" id="boutonAjoutProduit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--cBackground)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
-                <h3>Créer une recette</h3>
+                <h3>Ajouter un produit</h3>
             </button>
         </section>
 
         <!-- ----------------------------------------------------Overlay ------------------------------------------------------>
 
         <article>
-            <form post="#" id="créationDeProduit">
+            <form id="créationDeProduit">
                 <div><div id="nomProduit"><label for="nomProduitText">Nom du produit</label><input type="text" name="nomProduit" id="nomProduitText" placeholder="Ex. Carotte, Huile d'olive..."></div></div>
                 <div><div><label for="categorie">Catégorie</label><select name="categorie" id="categorie"><option value="dov">DOV</option><option value="doa">DOA</option><option value="bof">BOF</option><option value="economat">Economat</option><option value="cave">Cave</option><option value="surgele">Surgelé</option><option value="materiel">Matériel</option></select></div>
                 <div><label for="unite">Unité</label><select name="unite" id="unite"><option value="kg">kg</option><option value="L">L</option><option value="piece">Pièce</option><option value="botte">Botte</option><option value="boite">Boîte</option></select></div></div>
-                <div><div><label for="prixU">Prix unitaire</label><input type="number" id="prixU" name="prixU"></div>
+                <div><div><label for="prixU">Prix unitaire</label><input type="number" step="any" id="prixU" name="prixU"></div>
                 <button type="submit">Confirmer</button></div>
             </form>
         </article>
+        <!-- ----------------------------------------------------Overlay de suppression ---------------------------------------->
+
+        <div class="overlaySuppr">
+            <form post="#" id="créationDeProduit">
+                <h3>Voulez vous vraiment supprimer ce produit ?</h3>
+                <button type="submit">Oui</button>
+                <button type="submit">Non</button>
+            </form>
+        </div>
 
         <!-- ----------------------------------------------Tableau de produits---------------------------------------------- -->
 
