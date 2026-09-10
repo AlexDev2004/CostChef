@@ -194,11 +194,12 @@ table{
     td:last-child{
         width: 10%;
     }
-    td svg{
-        margin-left: 10%;
-        margin-right: 10%;
-        :hover{
-            stroke:var(--cFont);
-        }
+    td svg:nth-child(1):hover{
+        background-color: var(--cDetail);
+        border-radius: 5px;
+    }
+    td svg:nth-child(2):hover{
+        background-color: var(--red2);
+        border-radius: 5px;
     }
 }
