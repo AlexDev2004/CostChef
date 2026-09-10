@@ -80,13 +80,13 @@ produitsTab.map((produit)=>{
     const ligneProduit = document.createElement("tr");
 
     const nomProduit = document.createElement("td");
-    nomProduit.innerHTML = produit.nom;
+    nomProduit.innerText = produit.nom;
     const categorieProduit = document.createElement("td");
-    categorieProduit.innerHTML = produit.categorie;
+    categorieProduit.innerText = produit.categorie;
     const uniteProduit = document.createElement("td");
-    uniteProduit.innerHTML = produit.unite;
+    uniteProduit.innerText = produit.unite;
     const prixProduit = document.createElement("td");
-    prixProduit.innerHTML = produit.prix;
+    prixProduit.innerText = produit.prix;
     const colonneAction = document.createElement("td");
     colonneAction.innerHTML = `<svg class="pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cButton)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-pen"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg>
     <svg class="trash" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trash"><path d="M10 11v6"/><path d="M14 11v6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>`
@@ -109,13 +109,13 @@ penTab.map((pen,i)=>{
         const colPrice = ligneSelect.querySelectorAll("td")[3];
 
         const nomProduit = document.getElementById("nomProduitText");
-        nomProduit.value = colName.innerHTML;
+        nomProduit.value = colName.innerText;
         const categorieProduit = document.getElementById("categorie");
-        categorieProduit.value = colCategorie.innerHTML;
+        categorieProduit.value = colCategorie.innerText;
         const uniteProduit = document.getElementById("unite");
-        uniteProduit.value = colUnite.innerHTML;
+        uniteProduit.value = colUnite.innerText;
         const prixProduit = document.getElementById("prixU");
-        prixProduit.value = colPrice.innerHTML;
+        prixProduit.value = colPrice.innerText;
 
         produitsTab.splice(i,1);
     });

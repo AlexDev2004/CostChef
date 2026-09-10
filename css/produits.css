@@ -68,6 +68,46 @@ section{
     transform: translate(-50%, -50%);
     border-radius: 10px;
     padding:20px;
+    width: 350px;
+    text-align: center;
+
+    div{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    button{
+        font-size: 16px;
+        font-family: var(--fMain);
+        border: solid 3px;
+        width: 100px;
+        height: fit-content;
+        padding:10px;
+        margin:auto;
+        border-radius: 5px;
+        color:var(--cBackground);
+        font-weight: bold;
+        background-color: var(--cBackground);
+    }
+    button:nth-child(1){
+        color: var(--red1);
+        border-color: var(--red1);
+    }
+    button:nth-child(1):hover{
+        background-color: var(--red2);
+        color: rgb(63, 7, 7);
+        border-color: rgb(63, 7, 7);;
+    }
+    button:nth-child(2){
+        color: var(--cButton);
+        border-color: var(--cButton);
+    }
+    button:nth-child(2):hover{
+        background-color: var(--cDetail);
+        color: var(--cSecond);
+        border-color: var(--cSecond);
+    }
 }
 .overlaySupprClicked{
     display: flex;

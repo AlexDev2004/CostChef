@@ -17,3 +17,29 @@ main{
     gap:40px;
     justify-content: space-between;
 }
+
+
+/* Produits */
+#sectionPageProduits{
+    flex-direction: column;
+    justify-content: flex-start;
+
+    section{
+        justify-content: flex-start;
+        padding:50px;
+
+        #search{
+            width: 100%;;
+        }
+
+        button{
+            margin-left: 20px;
+        }
+    }
+    article{
+        display: none;
+    }
+    .articleOn{
+        display: flex;
+    }
+}
