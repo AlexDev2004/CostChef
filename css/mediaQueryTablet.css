@@ -1,24 +1,50 @@
 /* Accueil */
-.card{
-    gap:5px;
-    padding:10px;
-    height: 170px;
-}
-article{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 30px;
-    justify-content: center;
-    align-items: center;
-}
-main{
-    flex-direction: column;
-    padding: 50px;
-}
-aside{
-    padding-left: 40px;
-    padding-right: 40px;
-    width: auto;
+#pageAccueil{
+    .card{
+        gap:5px;
+        padding:10px;
+        height: 170px;
+    }
+    article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        flex-direction: column;
+        padding: 50px;
+    }
+    aside{
+        padding-left: 40px;
+        padding-right: 40px;
+        width: auto;
+    }
 }
 
+/* Produits */
+#sectionPageProduits{
+    flex-direction: column;
+    justify-content: flex-start;
+
+    section{
+        justify-content: flex-start;
+        padding:50px;
+
+        #search{
+            width: 100%;;
+        }
+
+        button{
+            margin-left: 20px;
+        }
+    }
+    article{
+        display: none;
+    }
+    .articleOn{
+        display: flex;
+    }
+}

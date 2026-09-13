@@ -46,6 +46,7 @@ section{
         width: 650px;
     }
 }
+
 #filterProductTypeSearch{
     font-size: 16px;
     font-family: var(--fMain);
@@ -131,6 +132,16 @@ article{
         flex-direction: column;
         width: 500px;
         gap:15px;
+
+        aside{
+            display: flex;
+            justify-content: space-between;
+
+            #lienRetour{
+                font-family: var(--fBis);
+                font-size: 16px;
+            }
+        }
         div{
             display: flex;
             width: 100%;
