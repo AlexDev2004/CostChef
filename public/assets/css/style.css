@@ -1,0 +1,200 @@
+body , html{
+    margin: 0;
+    padding: 0;
+    color: var(--cFont);
+    font-family: var(--fMain);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .aMini{
+        font-family: var(--fBis);
+    }
+}
+
+header{
+    background-color: var(--cSecond);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding: 15px;
+    color: var(--cBackground);
+
+    .logoCostChef{
+        margin-right: auto;
+    }
+
+    img{
+        height: 80px;
+        width: auto;
+    }
+
+    .logoRond img{
+        border-radius: 100px;
+    }
+}
+
+main{
+    background-color: var(--cBackground);
+    padding: 20px;
+}
+
+#zoneTitre{
+    display: flex;  
+    align-items: center;
+    gap:20px;
+
+    .iconTitre{
+        background-color: var(--cDetail);
+        border-radius: 100%;
+        width: fit-content;
+        height: fit-content;
+        padding: 15px;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h2 , p{
+        margin: 0;
+    }
+}
+
+.primaryButton{
+    display: flex;
+    background-color: var(--cButton);
+    border: none;
+    border-radius: 5px;
+    color: var(--cBackground);
+    font-weight: normal;    
+    font-size: 24px;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+}
+.primaryButton:hover{
+    background-color: var(--cSecond);
+    color: var(--cDetail2);
+}
+
+.secondaryButton{
+    display: flex;
+    background-color: var(--cBackground);   
+    color: var(--cButton);
+    border: var(--cButton) solid 3px;
+    border-radius: 5px;
+    font-size: 24px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+.secondaryButton:hover{
+    background-color: var(--cDetail);
+    border-color: var(--cSecond);
+    color: var(--cSecond);
+}
+
+form{
+    input , select{
+        border: solid 1px var(--cFont);
+        border-radius: 5px;
+        height: 30px;
+        width: 100%;
+    }
+    input::placeholder{
+        font-size: 16px;
+    }
+}
+
+footer{
+    background-color: var(--cDetail2);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-size: 24px;
+
+    #ariane{
+        display: flex;
+        gap: 5px;
+
+        .buttonOff{
+            font-weight: bold;
+            color: var(--cSecond);
+        }
+        .buttonOff:hover{
+            font-style: normal;
+            text-decoration: none;
+        }
+    }
+    #cgu{
+        margin-left: auto;
+    }
+}
+
+/* -------- Responsive ------------------ */
+
+/* format tablette */
+@media (max-width: 1275px) {
+    body{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 12px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+    footer{
+        a{
+            font-size: 20px;
+        }
+    }
+    .primaryButton , .secondaryButton{
+        font-size: 20px;
+        height: 35px;
+        svg{
+            height: 25px;
+            width: auto;
+        }
+    }
+}
+
+/* Format grand téléphone */
+@media (max-width: 780px){
+    header{
+        h2{
+            display: none;
+        }
+    }
+    .primaryButton , .secondaryButton{
+        height: fit-content;
+    }
+
+}   

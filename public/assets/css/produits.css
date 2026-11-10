@@ -1,0 +1,140 @@
+#produits{
+    section , #search{
+        display: flex;
+        align-items: center;
+        gap: 20px;  
+        
+        button{
+            margin-left: auto;
+        }
+    }
+
+    .new , .modif{
+        display: none;
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0.5);
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        padding:20px;
+        width: 30vw;
+    }
+
+    .overlaySuppr{
+        background-color: white;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0.5);
+        position: absolute;
+        z-index: 999;
+        top: 50%;
+        left: 50%;
+        display: none;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        padding:20px;
+        width: 350px;
+        text-align: center;
+
+        div{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        button{
+            font-size: 16px;
+            font-family: var(--fMain);
+            border: solid 3px;
+            width: 100px;
+            height: fit-content;
+            padding:10px;
+            margin:auto;
+            border-radius: 5px;
+            color:var(--cBackground);
+            font-weight: bold;
+            background-color: var(--cBackground);
+        }
+        button:nth-child(1){
+            color: var(--red1);
+            border-color: var(--red1);
+        }
+        button:nth-child(1):hover{
+            background-color: var(--red2);
+            color: rgb(63, 7, 7);
+            border-color: rgb(63, 7, 7);;
+        }
+        button:nth-child(2){
+            color: var(--cButton);
+            border-color: var(--cButton);
+        }
+        button:nth-child(2):hover{
+            background-color: var(--cDetail);
+            color: var(--cSecond);
+            border-color: var(--cSecond);
+        }
+    }
+
+
+    .articleOn , .overlaySupprClicked{
+        display: flex;
+    }
+
+    #créationDeProduit , #modifProduit{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        .nomProduit{    
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row{
+            display: flex;
+            gap: 10px;
+        }
+        .col{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        button{
+            height: 33px;
+            margin-top: auto;
+        }
+    }
+
+    /* --------------- Tableau ----------------------- */
+
+   #tableau{
+        display: flex;
+        justify-content: center;
+   }
+
+    #tableContainer{
+        padding: 0;
+        border-radius: 5px;
+        overflow: hidden;
+        width: fit-content;
+
+        table{
+            border-collapse: collapse;
+            width: 95vw;
+            td , th{
+            border: solid 1px var(--cDetail);
+            }
+
+            th{
+                background-color: var(--cDetail2);
+            }   
+
+            td{
+                padding: 5px;
+            }
+        }
+    }
+}
+

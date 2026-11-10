@@ -1,0 +1,117 @@
+#accueil{
+    display: flex;
+    gap: 20px;
+    
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titre{
+        display: flex;
+        align-items: center;
+
+        img{
+            height: 100px;
+            width: auto;
+        }
+    }
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        a{
+            display: flex;
+            align-items: center;
+            color: var(--cFont);
+            box-shadow: inset 5px 0px 3px var(--cSecond);
+            border: solid 1px var(--cDetail);
+            border-radius: 10px;
+            padding: 30px 10px 30px 10px;
+            gap: 10px;
+
+            .svg{
+                background-color: var(--cDetail);
+                border-radius: 100%;
+                width: fit-content;
+                height: fit-content;
+                padding: 15px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+
+                h3{
+                    margin: 0;
+                }
+            }
+        }
+        a:hover{
+            text-decoration: none;
+            font-style: normal;
+            box-shadow: inset 7px 0px 5px var(--cSecond);
+            background-color: var(--cDetail2);
+        }
+    }
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--cDetail2);
+        border-radius: 10px;
+        border: solid 1px var(--cDetail);
+        padding: 15px;
+        min-width: 335px;
+
+        .titre {
+            display: flex;
+            /* flex-direction: column; */
+            .titre2{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                gap: 10px;
+
+                h3{
+                    margin: 5px;
+                }
+            }
+            .titre3{
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+/* -------- Responsive ------------------ */
+
+/* format tablette */
+@media (max-width: 1275px) {
+    #accueil{
+        flex-direction: column;
+
+        .svg{
+            padding: 10px;
+        }
+        svg{
+            width: 60px;
+            height: auto;
+        }
+    }
+}
+
+/* Format grand téléphone */
+@media (max-width: 780px){
+    #accueil{
+        article{
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
